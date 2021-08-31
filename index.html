@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aqua;
+            width: 80%;
+            height: 300px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        #big {
+            position: relative;
+            height: 1000px;
+            width: 100%;
+            background-color: cyan;
+        }
+
+        #small {
+            position: absolute;
+            background-color: antiquewhite;
+            top: 50%;
+            left: 50%;
+            height: 240px;
+            width: 300px;
+            margin-top: -120px;
+            margin-left: -150px;
+        }
+
+        #small img {
+            position: absolute;
+            max-width: 100%;
+            position: absolute;
+            top: 50%;
+        }
+
+        .btn {
+            position: relative;
+            background: #888;
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            border-color: #999 #777 #777 #999;
+        }
+
+        #btn1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 40px;
+            width: 100px;
+            margin-top: -20px;
+            margin-left: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <div class="smallContainer">
+            <h2>world</h2>
+        </div>
+    </div>
+    <div id="big">
+        <p>big</p>
+        <div id="small">
+            <img src="img.png" alt="small" title="small">
+        </div>
+        <div class="btn">
+            <button id="btn1">
+                我是一个按钮
+            </button>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var ele = document.getElementById("small").children[0]
+            var ele_height = ele.clientHeight * 0.5 * -1
+            console.log(`ele_height:${ele_height}`)
+            ele.style.marginTop = ele_height + "px"
+        }
+    </script>
+</body>
+
+</html>
