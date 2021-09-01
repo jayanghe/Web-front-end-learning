@@ -6,65 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container {
-            background-color: aqua;
-            width: 80%;
-            height: 300px;
-            line-height: 30px;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        h1,
-        h2 {
-            margin: 0;
-        }
-
-        #big {
-            position: relative;
-            height: 1000px;
-            width: 100%;
-            background-color: cyan;
-        }
-
-        #small {
-            position: absolute;
-            background-color: antiquewhite;
-            top: 50%;
-            left: 50%;
-            height: 240px;
-            width: 300px;
-            margin-top: -120px;
-            margin-left: -150px;
-        }
-
-        #small img {
-            position: absolute;
-            max-width: 100%;
-            position: absolute;
-            top: 50%;
-        }
-
-        .btn {
-            position: relative;
-            background: #888;
-            width: 100px;
-            height: 100px;
-            border: 1px solid;
-            border-color: #999 #777 #777 #999;
-        }
-
-        #btn1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            height: 40px;
-            width: 100px;
-            margin-top: -20px;
-            margin-left: -50px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 
 <body>
@@ -88,9 +31,42 @@
             <img src="img.png" alt="small" title="small">
         </div>
         <div class="btn">
-            <button id="btn1">
+            <button id="btn1" onclick="alert('Hello')">
                 我是一个按钮
             </button>
+        </div>
+        <div class="Text">
+            <p id="text_upper">测试文本——text_uppercase</p>
+            <p id="text_lower">测试文本——Text_lower</p>
+            <p id="text_capitalize">测试文本——text_capitalize</p>
+        </div>
+        <div>
+            <ul class="ul1">
+                <ul>表格1
+                    <ol>1</ol>
+                    <ol>2</ol>
+                    <ol>3</ol>
+                    <ol>4</ol>
+                </ul>
+                <ul>表格2
+                    <ol>1</ol>
+                    <ol>2</ol>
+                    <ol>3</ol>
+                    <ol>4</ol>
+                </ul>
+                <ul>表格3
+                    <ol>1</ol>
+                    <ol>2</ol>
+                    <ol>3</ol>
+                    <ol>4</ol>
+                </ul>
+                <ul>表格4
+                    <ol>1</ol> 
+                    <ol>2</ol>
+                    <ol>3</ol>
+                    <ol>4</ol>
+                </ul>
+            </ul>
         </div>
     </div>
     <script>
